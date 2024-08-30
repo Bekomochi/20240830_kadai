@@ -1,0 +1,7 @@
+C:\Users\student\git\20240830_kadai\20240830_kadai\bin\Debug\20240830_kadai.exe.config
+C:\Users\student\git\20240830_kadai\20240830_kadai\bin\Debug\20240830_kadai.exe
+C:\Users\student\git\20240830_kadai\20240830_kadai\bin\Debug\20240830_kadai.pdb
+C:\Users\student\git\20240830_kadai\20240830_kadai\obj\Debug\20240830_kadai.csproj.AssemblyReference.cache
+C:\Users\student\git\20240830_kadai\20240830_kadai\obj\Debug\20240830_kadai.csproj.CoreCompileInputs.cache
+C:\Users\student\git\20240830_kadai\20240830_kadai\obj\Debug\20240830_kadai.exe
+C:\Users\student\git\20240830_kadai\20240830_kadai\obj\Debug\20240830_kadai.pdb
