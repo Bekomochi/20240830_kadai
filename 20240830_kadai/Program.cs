@@ -11,9 +11,6 @@ namespace _20240830_kadai
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("いらっしゃいませ！");
-            Console.ReadLine();
-
             List<Item> itemList = new List<Item>() {
             new Item(1, "ひのきのぼう", 8),
             new Item(2, "こんぼう", 30),
@@ -22,6 +19,7 @@ namespace _20240830_kadai
 
             int money = 1000;
             int number;
+
             Console.WriteLine("いらっしゃいませ！");
             Console.ReadLine();
 
@@ -37,7 +35,42 @@ namespace _20240830_kadai
 
                 int.TryParse(Console.ReadLine(), out number);
 
-            }while(number > 0);
+                if (number == 1)
+                {
+                    money -= itemList[0].price;
+
+                    Console.Clear();
+
+                    Console.WriteLine("お買い上げありがとうございます！");
+                    Console.ReadLine();
+                }
+                if (number == 2)
+                {
+                    money -= itemList[1].price;
+
+                    Console.Clear();
+
+                    Console.WriteLine("お買い上げありがとうございます！");
+                    Console.ReadLine();
+                }
+                if (number == 3)
+                {
+                    money -= itemList[2].price;
+
+                    Console.Clear();
+
+                    Console.WriteLine("お買い上げありがとうございます！");
+                    Console.ReadLine();
+                }
+
+            } while (number > 0);
+            if (number == 0)
+            {
+                Console.Clear();
+                Console.WriteLine("またのご利用お待ちしております！");
+                Console.ReadLine();
+            }
+
         }
     }
 }
