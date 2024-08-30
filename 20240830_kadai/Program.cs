@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace _20240830_kadai
 {
@@ -10,7 +11,9 @@ namespace _20240830_kadai
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("いらっしゃいませ！");
+            Console.ReadLine();
         }
     }
 }
+
