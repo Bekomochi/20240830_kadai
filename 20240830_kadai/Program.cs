@@ -26,7 +26,16 @@ namespace _20240830_kadai
             do
             {
                 Console.Clear();
-                Console.WriteLine("所持金:" + money);
+                if(money>0)
+                {
+                    Console.WriteLine("所持金:" + money);
+
+                }
+                if (money<0)
+                {
+                    Console.WriteLine("所持金:0");
+                }
+
                 Console.WriteLine("アイテム" + itemList[0].id + "." + itemList[0].name + ":" + itemList[0].price);
                 Console.WriteLine("アイテム" + itemList[1].id + "." + itemList[1].name + ":" + itemList[1].price);
                 Console.WriteLine("アイテム" + itemList[2].id + "." + itemList[2].name + ":" + itemList[2].price);
@@ -35,32 +44,53 @@ namespace _20240830_kadai
 
                 int.TryParse(Console.ReadLine(), out number);
 
+
                 if (number == 1)
                 {
-                    money -= itemList[0].price;
+                    if(money>0)
+                    {
+                        money -= itemList[0].price;
 
-                    Console.Clear();
+                        Console.Clear();
 
-                    Console.WriteLine("お買い上げありがとうございます！");
-                    Console.ReadLine();
+                        Console.WriteLine("お買い上げありがとうございます！");
+                        Console.ReadLine();
+                    }
+                    
                 }
                 if (number == 2)
                 {
-                    money -= itemList[1].price;
+                    if (money > 0)
+                    {
+                        money -= itemList[1].price;
 
-                    Console.Clear();
+                        Console.Clear();
 
-                    Console.WriteLine("お買い上げありがとうございます！");
-                    Console.ReadLine();
+                        Console.WriteLine("お買い上げありがとうございます！");
+                        Console.ReadLine();
+                    }
+                    if (money < 0)
+                    {
+                        Console.WriteLine("お金が足りません！");
+                        Console.ReadLine();
+                    }
                 }
                 if (number == 3)
                 {
-                    money -= itemList[2].price;
+                    if (money > 0)
+                    {
+                        money -= itemList[2].price;
 
-                    Console.Clear();
+                        Console.Clear();
 
-                    Console.WriteLine("お買い上げありがとうございます！");
-                    Console.ReadLine();
+                        Console.WriteLine("お買い上げありがとうございます！");
+                        Console.ReadLine();
+                    }
+                    if (money < 0)
+                    {
+                        Console.WriteLine("お金が足りません！");
+                        Console.ReadLine();
+                    }
                 }
 
             } while (number > 0);
